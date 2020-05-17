@@ -20880,6 +20880,10 @@ select.form-control-sm ~ .select2-container--default .select2-selection--multipl
   margin-top: 6px;
 }
 
+.maximized-card .select2-dropdown {
+  z-index: 9999;
+}
+
 .select2-primary + .select2-container--default.select2-container--open .select2-selection--single {
   border-color: #80bdff;
 }
@@ -23118,6 +23122,11 @@ select.form-control-sm ~ .select2-container--default .select2-selection--multipl
 
 #toast-container .toast-warning {
   background-color: #ffc107;
+}
+
+.toast-bottom-full-width .toast,
+.toast-top-full-width .toast {
+  max-width: inherit;
 }
 
 .pace {
