@@ -162,6 +162,18 @@
         </div>
       </div>
 
+      <!-- SidebarSearch Form -->
+      <div class="form-inline">
+        <div class="input-group" data-widget="sidebar-search">
+          <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+          <div class="input-group-append">
+            <button class="btn btn-sidebar">
+              <i class="fas fa-search fa-fw"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
       <!-- Sidebar Menu -->
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
@@ -752,7 +764,6 @@
                 </div>
                 <div class="card-body">
                   <div class="btn-group" style="width: 100%; margin-bottom: 10px;">
-                    <!--<button type="button" id="color-chooser-btn" class="btn btn-info btn-block dropdown-toggle" data-toggle="dropdown">Color <span class="caret"></span></button>-->
                     <ul class="fc-color-picker" id="color-chooser">
                       <li><a class="text-primary" href="#"><i class="fas fa-square"></i></a></li>
                       <li><a class="text-warning" href="#"><i class="fas fa-square"></i></a></li>
@@ -878,7 +889,6 @@
     new Draggable(containerEl, {
       itemSelector: '.external-event',
       eventData: function(eventEl) {
-        console.log(eventEl);
         return {
           title: eventEl.innerText,
           backgroundColor: window.getComputedStyle( eventEl ,null).getPropertyValue('background-color'),
@@ -960,12 +970,12 @@
 
     /* ADDING EVENTS */
     var currColor = '#3c8dbc' //Red by default
-    //Color chooser button
+    // Color chooser button
     $('#color-chooser > li > a').click(function (e) {
       e.preventDefault()
-      //Save color
+      // Save color
       currColor = $(this).css('color')
-      //Add color effect to button
+      // Add color effect to button
       $('#add-new-event').css({
         'background-color': currColor,
         'border-color'    : currColor
@@ -973,26 +983,26 @@
     })
     $('#add-new-event').click(function (e) {
       e.preventDefault()
-      //Get value and make sure it is not null
+      // Get value and make sure it is not null
       var val = $('#new-event').val()
       if (val.length == 0) {
         return
       }
 
-      //Create events
+      // Create events
       var event = $('<div />')
       event.css({
         'background-color': currColor,
         'border-color'    : currColor,
         'color'           : '#fff'
       }).addClass('external-event')
-      event.html(val)
+      event.text(val)
       $('#external-events').prepend(event)
 
-      //Add draggable funtionality
+      // Add draggable funtionality
       ini_events(event)
 
-      //Remove event from text input
+      // Remove event from text input
       $('#new-event').val('')
     })
   })
