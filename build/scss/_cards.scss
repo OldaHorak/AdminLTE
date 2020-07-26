@@ -40,6 +40,10 @@
       display: block !important;
     }
 
+    .card-body {
+      overflow: auto;
+    }
+
     [data-widget="collapse"] {
       display: none;
     }
@@ -412,6 +416,9 @@ html.maximized-card {
       > .fas,
       > .far,
       > .fab,
+      > .fal,
+      > .fad,
+      > .svg-inline--fa,
       > .ion {
         cursor: pointer;
         margin-right: 5px;
