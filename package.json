@@ -67,7 +67,7 @@
     "url": "https://github.com/ColorlibHQ/AdminLTE/issues"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.13.1",
+    "@fortawesome/fontawesome-free": "^5.14.0",
     "@fullcalendar/bootstrap": "^4.4.2",
     "@fullcalendar/core": "^4.4.2",
     "@fullcalendar/daygrid": "^4.4.2",
@@ -120,8 +120,8 @@
     "jsgrid": "^1.5.3",
     "jszip": "^3.5.0",
     "moment": "^2.24.0",
-    "overlayscrollbars": "^1.12.0",
-    "pdfmake": "^0.1.66",
+    "overlayscrollbars": "^1.13.0",
+    "pdfmake": "^0.1.68",
     "popper.js": "^1.16.1",
     "raphael": "^2.3.0",
     "select2": "^4.0.13",
@@ -132,10 +132,10 @@
     "toastr": "^2.1.4"
   },
   "devDependencies": {
-    "@babel/core": "^7.10.5",
-    "@babel/preset-env": "^7.10.4",
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
     "@rollup/plugin-babel": "^5.1.0",
-    "autoprefixer": "^9.8.5",
+    "autoprefixer": "^9.8.6",
     "browser-sync": "^2.26.12",
     "bundlewatch": "^0.2.7",
     "clean-css-cli": "^4.3.0",
