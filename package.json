@@ -67,7 +67,7 @@
     "url": "https://github.com/ColorlibHQ/AdminLTE/issues"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.14.0",
+    "@fortawesome/fontawesome-free": "^5.15.0",
     "@fullcalendar/bootstrap": "^5.3.1",
     "@fullcalendar/core": "^5.3.1",
     "@fullcalendar/daygrid": "^5.3.2",
