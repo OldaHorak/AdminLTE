@@ -273,7 +273,7 @@ select.form-control-sm ~ {
   @include select2-variant($name, $color);
 }
 
-.dark-mode {
+@include dark-mode () {
   .select2-selection {
     background-color: $dark;
     border-color: $gray-600;
@@ -313,5 +313,15 @@ select.form-control-sm ~ {
 
   .select2-container--bootstrap4 .select2-selection--multiple .select2-selection__choice {
     color: $white;
+  }
+
+  // Background colors (theme colors)
+  @each $name, $color in $theme-colors-alt {
+    @include select2-variant($name, $color);
+  }
+
+  // Background colors (colors)
+  @each $name, $color in $colors-alt {
+    @include select2-variant($name, $color);
   }
 }

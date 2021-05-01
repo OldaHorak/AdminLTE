@@ -296,7 +296,7 @@ Top navbar example can be found in this [demo page](https://adminlte.io/themes/d
   <div class="container">
     <a href="index3.html" class="navbar-brand">
       <img src="{{ '/assets/img/AdminLTELogo.png' | prepend: site.baseurl }}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
-           style="opacity: .8">
+           style="opacity: .8; max-height: 33px;">
       <span class="brand-text font-weight-light">AdminLTE 3</span>
     </a>
     <!-- Left navbar links -->
@@ -570,5 +570,5 @@ Top navbar example can be found in this [demo page](https://adminlte.io/themes/d
 
 > ##### Tip!
 > To get a bigger dropdown menu you can add `.dropdown-menu-lg` or `.dropdown-menu-xl` to `.dropdown-menu`.
-> You can also get the legacy dropdown offset with adding `.dropdown-offset-legacy` to `.main-header`.
+> You can also get the legacy dropdown offset with adding `.dropdown-legacy` to `.main-header`.
 {: .quote-info}

@@ -1,6 +1,5 @@
 name: "CodeQL config"
 
 paths-ignore:
-  - dist/js/adminlte.js
-  - dist/js/adminlte.min.js
-  - docs/assets/js/
+  - docs/assets/plugins/
+  - plugins/

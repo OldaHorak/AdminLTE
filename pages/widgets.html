@@ -31,20 +31,30 @@
       </li>
     </ul>
 
-    <!-- SEARCH FORM -->
-    <form class="form-inline ml-3">
-      <div class="input-group input-group-sm">
-        <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
-        <div class="input-group-append">
-          <button class="btn btn-navbar" type="submit">
-            <i class="fas fa-search"></i>
-          </button>
-        </div>
-      </div>
-    </form>
-
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
+      <!-- Navbar Search -->
+      <li class="nav-item">
+        <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+          <i class="fas fa-search"></i>
+        </a>
+        <div class="navbar-search-block">
+          <form class="form-inline">
+            <div class="input-group input-group-sm">
+              <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+              <div class="input-group-append">
+                <button class="btn btn-navbar" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+                <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </li>
+
       <!-- Messages Dropdown Menu -->
       <li class="nav-item dropdown">
         <a class="nav-link" data-toggle="dropdown" href="#">
@@ -306,6 +316,12 @@
                   <p>Inline</p>
                 </a>
               </li>
+              <li class="nav-item">
+                <a href="charts/uplot.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>uPlot</p>
+                </a>
+              </li>
             </ul>
           </li>
           <li class="nav-item">
@@ -544,7 +560,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="examples/faq.html" class="nav-link active">
+                <a href="examples/faq.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>FAQ</p>
                 </a>
@@ -711,7 +727,13 @@
           </li>
           <li class="nav-header">MISCELLANEOUS</li>
           <li class="nav-item">
-            <a href="https://adminlte.io/docs/3.0/" class="nav-link">
+            <a href="../iframe.html" class="nav-link">
+              <i class="nav-icon fas fa-ellipsis-h"></i>
+              <p>Tabbed IFrame Plugin</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://adminlte.io/docs/3.1/" class="nav-link">
               <i class="nav-icon fas fa-file"></i>
               <p>Documentation</p>
             </a>
@@ -3085,7 +3107,7 @@
             <div class="row">
               <div class="col-md-12 col-lg-6 col-xl-4">
                 <div class="card mb-2 bg-gradient-dark">
-                  <img class="card-img-top" src="../dist/img/photo1.png">
+                  <img class="card-img-top" src="../dist/img/photo1.png" alt="Dist Photo 1">
                   <div class="card-img-overlay d-flex flex-column justify-content-end">
                     <h5 class="card-title text-primary text-white">Card Title</h5>
                     <p class="card-text text-white pb-2 pt-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor.</p>
@@ -3095,7 +3117,7 @@
               </div>
               <div class="col-md-12 col-lg-6 col-xl-4">
                 <div class="card mb-2">
-                  <img class="card-img-top" src="../dist/img/photo2.png">
+                  <img class="card-img-top" src="../dist/img/photo2.png" alt="Dist Photo 2">
                   <div class="card-img-overlay d-flex flex-column justify-content-center">
                     <h5 class="card-title text-white mt-5 pt-2">Card Title</h5>
                     <p class="card-text pb-2 pt-1 text-white">
@@ -3109,7 +3131,7 @@
               </div>
               <div class="col-md-12 col-lg-6 col-xl-4">
                 <div class="card mb-2">
-                  <img class="card-img-top" src="../dist/img/photo3.jpg">
+                  <img class="card-img-top" src="../dist/img/photo3.jpg" alt="Dist Photo 3">
                   <div class="card-img-overlay">
                     <h5 class="card-title text-primary">Card Title</h5>
                     <p class="card-text pb-1 pt-1 text-white">
@@ -3136,9 +3158,9 @@
 
   <footer class="main-footer">
     <div class="float-right d-none d-sm-block">
-      <b>Version</b> 3.1.0-pre
+      <b>Version</b> 3.1.0
     </div>
-    <strong>Copyright &copy; 2014-2020 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
   </footer>
 
   <!-- Control Sidebar -->
